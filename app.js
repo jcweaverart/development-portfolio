@@ -5,6 +5,9 @@ let app = express();
 let bodyParser = require('body-parser');
 let pug = require('pug');
 let path = require('path');
+let cors = require('cors');
+
+app.use(cors());
 
 app.set('views', path.join(__dirname , "views"));
 app.set("view engine", "pug");
