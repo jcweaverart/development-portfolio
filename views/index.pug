@@ -1,0 +1,258 @@
+doctype html
+html
+  head
+    // HEAD CONTENT
+    title  J.C. Weaver Portfolio 
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    link(type='text/css', rel='stylesheet', href='./styles.css')
+    script(src='http://code.jquery.com/jquery-latest.min.js', type='text/javascript')
+    // HEAD CONTENT
+  body
+    // HEADER SECTION
+    #imageBox1.container-fluid
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') J.C. Weaver
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#main') About
+              li
+                a(href='#portfolio') Portfolio
+              li
+                a(href='#contact') Contact
+          // /.navbar-collapse
+        // /.container-fluid
+      .layer.background-00(data-type='parallax', data-depth='1')
+      .layer.backgroundLayer(data-type='parallax', data-depth='1.20')
+      .layer.background-03(data-type='parallax', data-depth='1.50')
+      .layer.background-02(data-type='parallax', data-depth='1.30')
+      .layer.background-01(data-type='parallax', data-depth='1')
+      .container
+        .row
+          #main.main-header
+            h1(style='text-align: left; color:#055360;')  " 
+            br
+            h1
+              | A bug is never just a mistake. It represents something bigger. An error of thinking that makes you who you are.
+            br
+            h1(style='text-align: right; color: #055360;')  " 
+            h1(style='text-align: center; color: #055360; font-size: 20px;')  -Mr. Robot 
+    // HEADER SECTION
+    // ABOUT ME SECTION
+    #about.container-fluid.aboutMe
+      .container
+        .row
+          .col-md-4
+            .myImage
+          .col-md-8
+            .aboutMe-text
+              h1.aboutMe-title
+                | About
+                span(style='color:#127c8e;')  Me
+              p.aboutMe-details
+                | Full Stack Javascript Developer and User Interface Designer; Degree in business management with an emphasis on international studies and graphic design; Experience in the field building real world apps in Node.js, Express, Angular, React, MongoDB, Boostrap, CSS Grid, SASS, JQuery, AJAX, Mocha, Gulp, Heroku; Experience designing apps using Adobe Xd, Adobe Illustrator, Adobe Photoshop, Balsamiq; Lover of all things OOP, Promise, and ES6.
+    // ABOUT ME SECTION
+    // PORTFOLIO SECTION
+    #portfolio.container-fluid.portfolio
+      .layer.background-05.flipped(data-type='parallax', data-depth='.250', style='z-index: -1;')
+      .layer.background-04.flipped(data-type='parallax', data-depth='.25', style='z-index: -1;')
+      .layer.background-06.flipped(data-type='parallax', data-depth='.15', style='z-index: -1;')  
+      .container
+        .row
+          h1
+            | Port
+            span(style='color:darkcyan') folio
+        .row.portfolio-row
+          .col-md-4
+            #project-wrap
+              #project1.project
+                a(href='https://tee-lee-popcorn.herokuapp.com/')
+                  .hidden-text
+                    h2
+                      | No
+                      span(style='color:darkcyan') de.j
+                      | s Site
+                    p
+                      | Tee Lee Popcorn Inc. server side routing with Parallax effects and modern styling!
+          .col-md-4
+            #project-wrap
+              #project2.project
+                .hidden-text
+                  h2
+                    | Adob
+                    span(style='color:darkcyan') e Xd
+                    | Design
+                  p
+                    | Have been included in the design and javascript dev of a micro dev company called Dimension. Dev in process!
+          .col-md-4
+            #project-wrap
+              #project3.project
+                a(href='http://www.primetimepopcorn.com/')
+                  .hidden-text
+                    h2
+                      | Front
+                      span(style='color:darkcyan')  End 
+                      |  site
+                    p
+                      | PrimeTime Popcorn needed a quick site prepared. This site will soon have an Express backend.
+        .row.portfolio-row
+          .col-md-4
+            #project-wrap
+              #project4.project
+                .hidden-text
+                  h2
+                    | Photos
+                    span(style='color:darkcyan') hop & 
+                    |  Illustrator
+                  p  10 Forward hired me for some work designing their Mobile App and Site for this.
+          .col-md-4
+            #project-wrap
+              #project5.project
+                .hidden-text
+                  h2
+                    | React
+                    span(style='color:darkcyan')  App 
+                  p
+                    | A trendy new site for a small coffee company in the West. Full Isomorphic Routing on this one.
+          .col-md-4
+            #project-wrap
+              #project6.project
+                a(href='https://www.primetimepromotionals.com')
+                  .hidden-text
+                    h2
+                      | Word
+                      span(style='color:darkcyan') press 
+                      |  site
+                    p
+                      | Worked on some php templates in wordpress to build a site for Promotionals by PrimeTime. All media done by me.
+        .row.portfolio-row
+          .col-md-4
+            #project-wrap
+              #project7.project
+                .hidden-text
+                  h2
+                    | Photoshop
+                    span(style='color:darkcyan') & Illus
+                    | trator D3 App
+                  p
+                    | This is a mobile design OAuth App utilizing D3 to display the stats. Current WIP.
+          .col-md-4
+            #project-wrap
+              #project8.project
+                a(href='https://www.jcweaverart.com')
+                  .hidden-text
+                    h2
+                      | Wor
+                      span(style='color:darkcyan') dpress 
+                      |  site
+                    p
+                      | Worked in the PHP realm breifly to build the JCWeaverart portfoilio. My design work in this.
+          .col-md-4
+            #project-wrap
+              #project9.project
+                a(href='https://custom-tribute-page.herokuapp.com/index.html')
+                  .hidden-text
+                    h2
+                      | Parall
+                      span(style='color:darkcyan') ax 
+                      |  Page
+                    p
+                      | This was a simple project utilizing some mixed javascript and css to create a stunning parallax snowscape.
+        .row.portfolio-row
+          .col-md-4
+            #project-wrap
+              #project10.project
+                a(href='https://personal-flashcards.herokuapp.com/dash')
+                  .hidden-text
+                    h2
+                      | MongoDB
+                      span(style='color:darkcyan')  Express 
+                      | App
+                    p
+                      | This uses some more advanced routing and interaction with a mock mongoDB. Scaling WIP.
+          .col-md-4
+            #project-wrap
+              #project11.project
+                a(href='https://custom-calculator.herokuapp.com/index.html')
+                  .hidden-text
+                    h2
+                      | Algorithm
+                      span(style='color:darkcyan')  Wo
+                      | rk Part 1
+                    p
+                      | This is just a simple practice of some algorithm work to build a calculator. Refactoring in progress.
+          .col-md-4
+            #project-wrap
+              #project12.project
+                a(href='https://custom-simon-says.herokuapp.com/index.html')
+                  .hidden-text
+                    h2
+                      | Algor
+                      span(style='color:darkcyan') ithm Work
+                      |  Part 2
+                    p
+                      | Slightly more advanced algorithm work. All vectors, algorithms, and implementation done by me.
+    // PORTFOLIO SECTION
+    // CONTACT ME SECTION
+    #contact.container-fluid.contact
+      .layer.background-05.flipped(data-type='parallax', data-depth='.250', style='z-index: -1;')
+      .layer.background-04.flipped(data-type='parallax', data-depth='.25', style='z-index: -1;')
+      .layer.background-06.flipped(data-type='parallax', data-depth='.15', style='z-index: -1;')  
+      .container
+        .row.contact-header(style='text-align: right;')
+          h1(style='margin-top: 30px;')
+            | Contac
+            span(style='color:darkcyan') t Me
+        .row
+          form(action='mailto:jcweaverart@gmail.com', method='post')
+            .row
+              .col-md-4
+                input#first-name(type='text', name='f-name', placeholder='First Name', required='')
+              .col-md-4
+                input#last-name(type='text', name='l-name', placeholder='Last Name', required='')
+              .col-md-4
+                input#email-address(type='email', name='email', placeholder='Email', required='')
+            label Your Message
+            br
+            textarea(name='message', rows='2', cols='40', required='')  
+            br
+            button#send(type='submit', name='send')  Send it! 
+    // CONTACT ME SECTION
+    // FOOTER SECTION
+    .container-fluid.footer
+      .container
+        .row.connect
+          .col-md-6
+            h2 About My Site
+            p
+              | Made with a couple hours of free time and the accompanyment of Rick and Morty and Chance the Rapper and chocolate milk!
+          .col-md-6
+            h2 Where to find me
+            a.btn.btn-social-icon.btn-twitter(href='https://twitter.com/jcweaverart')
+              span.fa.fa-twitter  Twitter
+            a.btn.btn-social-icon.btn-linkedin(href='https://www.linkedin.com/in/weaverjordan/')
+              span.fa.fa-linkedin  Linkedin
+            a.btn.btn-social-icon.btn-instagram(href='https://www.instagram.com/jcweaverart/')
+              span.fa.fa-instagram  Instagram
+            a.btn.btn-social-icon.btn-github(href='https://github.com/jcweaverart')
+              span.fa.fa-github  Github
+      .row.rights-reserved
+        | Made by J.C. Weaver. October 1st, 2017. All Rights Reserved.
+    // FOOTER SECTION
+    // SCRIPTS SECTION
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=', crossorigin='anonymous')
+    script(src='./jquery.waypoints.min.js')
+    script(src='./app.js')
+    // SCRIPTS SECTION
