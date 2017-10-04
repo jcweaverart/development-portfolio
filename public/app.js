@@ -22,11 +22,3 @@ window.addEventListener('scroll', () => {
     layer.style.transform = transform3d;
   }
 });
-
-
-let $point = $("#section2");
-
-$point.waypoint(function(direction){
-  
-  console.log("Active Waypoint!");
-}, {offset: "50%"});
